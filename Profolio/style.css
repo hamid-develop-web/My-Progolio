@@ -1,0 +1,373 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img{
+    width: 100%;
+}
+nav{
+    position: fixed;
+    /* top: 100px; */
+    width: 100%;
+}
+nav, .download, ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+    padding: 10px;
+    background: rgb(26, 25, 25);
+    
+}
+nav>div:first-child{
+    color: white;
+    margin-left: 10px;
+
+}
+ul{
+    list-style-type: none;
+}
+ul>li>.fa{
+    border-bottom: 1px solid yellow;
+}
+li a:hover{
+    border-bottom: 1px solid yellow;
+}
+a{
+    text-decoration: none;
+    color: gray;
+}
+nav #lastdiv{
+    display: flex;
+    flex-direction: row;
+
+}
+nav #lastdiv{
+    display: none;
+    
+}
+nav #lastpart img{
+    border-radius: 5px;
+}
+nav #lastdiv:hover{
+    cursor: pointer;
+}
+.cv{
+    padding: 10px 20px;
+    border-radius: 30px;
+    background: darkgoldenrod;
+    border: none;
+    cursor: pointer;
+}
+
+/* ==========================Article=============================  */
+article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 300px;
+    margin: auto;
+}
+.pic>img{
+    height: 700px;
+    width: 500px;
+}
+
+.hamid{
+    background: black;
+    color: white;
+    border-radius: 30px;
+    padding: 20px;
+    margin: 10px;
+}
+.em{
+    background-color: rgb(227, 227, 27);
+    color: black;
+    border-radius: 30px;
+    padding: 15px;
+}
+.em>a{
+    color: black;
+    font-weight: bolder;
+}
+.em:hover{
+    background: black;
+    color: white;
+}
+
+/* ================About Me============= */
+.aboutme{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    margin:50px;
+}
+.para,
+.three,
+.review p{
+    font-family: sans-serif;
+    line-height: 2em;
+    color: gray;
+    /* text-align: center; */
+}
+.para, .image{
+    padding-right: 50px;
+}
+.aboutme img{
+    border-radius: 30px;
+}
+.para .temp,
+.para h1,
+.three h1{
+    color: black;
+}
+/* About Table */
+.desc{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.desc>div:first-child{
+    color: black;
+    font-weight: bolder;
+}
+.desc>div:nth-child(2){
+    color: black;
+}
+.three{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto 50px;
+    gap: 30px;
+}
+.th3 h1{
+    font-size: 40px;
+    color: rgb(55, 54, 54);
+}
+/* ABOUT REVIEW CLASS */
+
+.review{
+    background: rgb(234, 231, 231);
+    margin: 100px 0 40px 0;
+    padding: 80px;
+    /* margin: 50px; */
+}
+.review h2{
+    text-align: center;
+    font-family: sans-serif;
+    color: rgb(88, 87, 87);
+}
+.pr1,.pr2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.pr2{
+    display: none;
+}
+.pr{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 20px;
+    padding: 20px;
+}
+.pr>div>p{
+    margin-bottom: 20px;
+}
+.pr img{
+    border-radius: 50%;
+    width: 100px;
+}
+span{
+    color: gray;
+}
+.mybtn{
+    text-align: center;
+}
+.mybtn button{
+    width: 30px;
+    height: 2px;
+    border: none;
+    background: gray;
+    border-radius: 30px;
+}
+.mybtn button:hover{
+    cursor: pointer;
+}
+.mybtn #btn1{
+    background: yellow;
+
+}
+.mybtn #btn3, .mybtn #btn4{
+    display: none;
+}
+/* =================ABOUT FREQUENTLY CLASS============= */
+.frequently{
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+}
+.frequently h1{
+    margin-bottom: 50px;
+    color: rgb(38, 37, 37);
+    font-family: sans-serif;
+}
+.frequently table,
+.frequently table tr td{
+    border: 1px solid rgb(159, 158, 158);
+    border-collapse: collapse;
+}
+
+.frequently table{
+    background: rgb(234, 231, 231);
+    color: black;
+}
+td{
+    padding: 30px;
+    font-size: 30px;
+    font-family: sans-serif;
+    color: rgb(49, 48, 48);
+}
+/*  ===== about td ========================= */
+.ftd:hover{
+    cursor: pointer;
+    background-color: white;
+}
+.ftd1,.ftd2,.ftd3{
+    display: none;
+    width: 100%;
+}
+.ftd1 td{
+    width: 100%;
+}
+.send{
+    margin-left: 20px;
+    padding: 20px;
+    font-family: sans-serif;
+}
+.h23{
+    color: black;
+    font-weight: bolder;
+}
+form input{
+    border: none;
+    border-bottom: 1px solid rgb(80, 79, 79);
+    padding: 20px;
+    width: 100%;
+    margin: 20px 0 30px 0;
+}
+form input[type="submit"]{
+    border: 1px solid yellow;
+    background-color: yellow;
+    border-radius: 30px;
+    width: 90px;
+    cursor: pointer;
+    padding: 10px 30px;
+}
+form input[type="submit"]:hover{
+    background-color: black;
+    color: white;
+}
+form input ::placeholder{
+    display: none;
+}
+.lastpart{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 50px;
+}
+.lastpart>.mform,
+.lastpart footer{
+    padding: 30px;
+}
+.shape{
+    display: flex;
+}
+footer{
+    display: grid;
+    color: gray;
+    /* background: gray; */
+}
+footer a, 
+footer h1{
+    color: black;
+}
+footer .shape div>img{
+    width: 50px;
+}
+/* CSS Class */
+.font{
+    font-family: sans-serif;
+    font-size: 24px;
+}
+/* ==== ALL h1  ELEMENTS =========== */
+h1{
+    font-size: 28px;
+}
+/* ===================== MEDIA QUERY ===================================== */
+@media only screen and (max-width:768px){
+    body{
+        /* background: white; */
+        box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
+    }
+    h1{
+        font-size: 24px;
+    }
+    nav{
+        display: flex;
+        padding: 20px;
+    }
+    nav .download,ul{
+        display: none;
+    }
+    nav #lastdiv{
+        display: block;
+        width: 70px;
+    }
+    nav #lastdiv div{
+        display: none;
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        color: red;
+        font-size: 24px;
+    }
+    article{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .aboutme,.three,.frequently,.lastpart{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .mybtn{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        gap: 10px;
+    }
+    .mybtn #btn3,.mybtn #btn4{
+        display: block;
+        width: 30px;
+        height: 2px;
+    }
+    .pr{
+        display: none;
+    }
+    .pr:first-child{
+        display: flex;
+        
+    }
+    .lastpart *{
+        padding: 5px;
+    }
+    .lastdiv #home{
+        width: 20px;
+        height: 10px;
+    }
+}
